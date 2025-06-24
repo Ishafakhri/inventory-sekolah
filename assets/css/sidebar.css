@@ -1,0 +1,31 @@
+/* Sidebar minimize/maximize styles */
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+.sidebar.minimized {
+    width: 80px;
+}
+
+.sidebar.minimized .sidebar-header h3,
+.sidebar.minimized .sidebar-header p,
+.sidebar.minimized .sidebar-nav li a span {
+    display: none;
+}
+
+.sidebar.minimized .sidebar-nav li a {
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.sidebar.minimized .sidebar-nav li a i {
+    margin-right: 0;
+}
+
+.main-content {
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.expanded {
+    margin-left: 80px;
+}
